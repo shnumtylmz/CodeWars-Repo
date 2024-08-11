@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+function nbYear(p0, percent, aug, p) {
+    let years = 0;
+    let population = p0;
+
+    while(population < p){
+        population += population * (percent/100) + aug;
+        population = Math.floor(population);
+        years++;
+    }
+    return years;
+}
+
+console.log(nbYear(1500,1,100,3000));
+
+    </script>
+</body>
+</html>
