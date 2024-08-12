@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- You might know some pretty large perfect squares. But what about the NEXT
+    one? Complete the findNextSquare method that finds the next integral perfect
+    square after the one passed as a parameter. Recall that an integral perfect
+    square is an integer n such that sqrt(n) is also an integer. If the argument
+    is itself not a perfect square then return either -1 or an empty value like
+    None or null, depending on your language. You may assume the argument is
+    non-negative. -->
+
+    <!-- Oldukça büyük mükemmel kareleri (tam kare) biliyor olabilirsiniz. Peki ya
+    bir SONRAKİ'si? Parametre olarak verilen tam kareden sonraki tam kareyi
+    bulan findNextSquare yöntemini tamamlayın. Bir tam kare, karekökü de bir tam
+    sayı olan n tam sayısıdır. Eğer argüman kendisi bir tam kare değilse,
+    dilinize bağlı olarak ya -1 ya da None veya null gibi boş bir değer
+    döndürün. Argümanın negatif olmayacağını varsayabilirsiniz. -->
+    <script>
+     
+      function findNextSquare(sq) {
+        let square = Math.sqrt(sq)
+        if(Number.isInteger(square)){
+            return Math.pow(square + 1, 2);
+        }else{
+          return -1;
+        }
+
+        // Return the next square if sq is a perfect square, -1 otherwise
+      };
+      console.log(findNextSquare(9));
+    </script>
+  </body>
+</html>
