@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- In this kata you will create a function that takes a list of non-negative
+    integers and strings and returns a new list with the strings filtered out. -->
+
+    <script>
+        function filter_list(l) {
+           return l.filter(item => typeof item === "number");
+        }
+console.log(filter_list([1,2,'a','b']));
+    </script>
+  </body>
+</html>
