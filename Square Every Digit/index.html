@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Welcome. In this kata, you are asked to square every digit of a number and
+    concatenate them. For example, if we run 9119 through the function, 811181
+    will come out, because 92 is 81 and 12 is 1. (81-1-1-81) Example #2: An
+    input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is
+    25. (49-36-25) Note: The function accepts an integer and returns an integer.
+    Happy Coding! -->
+    <!-- "Hoş geldiniz. Bu koda göre, sizden bir sayının her basamağını karesini alıp
+    birleştirmeniz isteniyor. Örneğin, 9119 sayısını fonksiyondan
+    geçirdiğimizde, 811181 sonucu çıkar, çünkü 9² 81'dir ve 1² 1'dir.
+    (81-1-1-81) Örnek #2: 765 girişi 493625 döndürür/döndürmelidir, çünkü 7²
+    49'dur, 6² 36'dır ve 5² 25'tir. (49-36-25) Not: Fonksiyon bir tam sayı alır
+    ve bir tam sayı döndürür. İyi Kodlamalar!" -->
+    <script>
+      function squareDigits(num) {
+        let square = num.toString().split("");
+        let everyNumber = square.map(n => Math.pow(parseInt(n), 2));
+        let res = everyNumber.join("");
+        return Number(res);
+      }
+      console.log(squareDigits(9119))
+    </script>
+  </body>
+</html>
