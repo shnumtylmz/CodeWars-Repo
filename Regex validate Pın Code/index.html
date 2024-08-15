@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain
+    anything but exactly 4 digits or exactly 6 digits. If the function is passed
+    a valid PIN string, return true, else return false. -->
+    <script>
+        function validatePIN (pin) {
+        let regex = /^\d+$/;
+        let pinString = pin.toString();
+        if((pin.length === 4 || pin.length === 6) && regex.test(pinString)){
+            return true;
+        } else{
+            return false
+        }   
+        }
+        console.log(validatePIN(1231))
+    </script>
+  </body>
+</html>
