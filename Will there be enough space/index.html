@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function enough(cap, on, wait) {
+        let driver = 1;
+        let emptySpace = cap - on;
+        if(emptySpace >= wait){
+            return 0;
+        }else{
+            return wait - emptySpace
+        }
+      }
+
+      console.log(enough(10,5,5))
+      console.log(enough(100,60,50))
+    </script>
+  </body>
+</html>

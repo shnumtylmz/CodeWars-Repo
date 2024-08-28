@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      function makeNegative(num) {
+        let negative = Math.abs(num);
+        if(negative){
+          return -negative;
+        }else if(negative == 0){
+          return 0;
+        }else{
+          return negative;
+        }
+      }
+
+    
+
+      console.log(makeNegative(2))
+      console.log(makeNegative(0))
+      console.log(makeNegative(-10))
+    </script>
+  </body>
+</html>
