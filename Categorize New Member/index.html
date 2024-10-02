@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Western Suburbs Croquet Kulübü'nün iki üyelik kategorisi vardır: Senior
+    (Kıdemli) ve Open (Açık). Kulüp, hangi kategoride yer alacaklarını belirten
+    bir başvuru formu için yardıma ihtiyaç duymaktadır. Bir üyenin senior
+    (kıdemli) olması için en az 55 yaşında olması ve handikapının 7'den büyük
+    olması gerekmektedir. Bu croquet kulübünde handikaplar -2 ile +26 arasında
+    değişmektedir; oyuncu ne kadar iyi olursa handikap o kadar düşük olur.
+    Girdi: Girdi, her biri bir potansiyel üye için bilgi içeren çiftlerden
+    oluşacaktır. Her çift, kişinin yaşı ve handikapı hakkında bilgi veren bir
+    tamsayı içerir. Çıktı: Çıktı, her üyenin senior (kıdemli) veya open (açık)
+    kategorisinde yer alacağını belirten bir dizi string (metin) değerinden
+    oluşacaktır. -->
+    <script>
+      function openOrSenior(data) {
+        return data.map(member => {
+            const [age, handicap] = member;
+            if(age >= 55 && handicap > 7){
+                return "Senior";
+            }else{
+                return "Open";
+            }
+        });
+      }
+
+      openOrSenior(40, 20)
+    </script>
+  </body>
+</html>
