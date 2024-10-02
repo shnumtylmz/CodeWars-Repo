@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function longestConsec(strarr, k) {
+        let n = strarr.length;
+        if ((n = 0 || k > n || k <= 0)) {
+            return "";
+        }
+
+        let longest = "";
+
+        for(let i = 0; i<= n -k; i++){
+            const currentConcat = strarr.slice(i, i + k).join('');
+            if(currentConcat.length > longest.length){
+                longest = currentConcat;
+            }
+        }
+
+        return longest;
+      }
+    </script>
+  </body>
+</html>
